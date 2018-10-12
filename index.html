@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	  <meta http-equiv="Pragma" content="no-cache" />
+	  <meta http-equiv="Expires" content="0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true, iconSize: true };</script>
+    <script src="http://wow.zamimg.com/widgets/power.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+        <h1>Lootfinder</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+        <div id="lootwrap">
+          <div id="filterscontrols">
+            <div class="filters-items">
+              <div class="left-text">Armor Class:</div>
+              <div class="buttons">
+                <button data-filter="ping" data-filter-tag="cloth"><a>Cloth</a></button>
+                <button data-filter="ping" data-filter-tag="leather"><a>Leather</a></button>
+                <button data-filter="ping" data-filter-tag="mail"><a>Mail</a></button>
+                <button data-filter="ping" data-filter-tag="plate"><a>Plate</a></button>
+              </div>
+            </div>
+            <div class="filters-items">
+              <div class="left-text">Statistics:</div>
+              <div class="buttons">
+                <button data-filter="ping" data-filter-tag="crit"><a>Critical Strike</a></button>
+                <button data-filter="ping" data-filter-tag="haste"><a>Haste</a></button>
+                <button data-filter="ping" data-filter-tag="mastery"><a>Mastery</a></button>
+                <button data-filter="ping" data-filter-tag="vers"><a>Versatility</a></button>
+              </div>
+            </div>
+            <div class="filters-items">
+              <div class="left-text">Armor Type:</div>
+              <div class="buttons">
+                <button data-filter="ping" data-filter-tag="head"><a>Head</a></button>
+                <button data-filter="ping" data-filter-tag="shoulder"><a>Shoulder</a></button>
+                <button data-filter="ping" data-filter-tag="cloak"><a>Cloak</a></button>
+                <button data-filter="ping" data-filter-tag="chest"><a>Chest</a></button>
+                <button data-filter="ping" data-filter-tag="wrist"><a>Wrist</a></button>
+                <button data-filter="ping" data-filter-tag="hands"><a>Hands</a></button>
+                <button data-filter="ping" data-filter-tag="waist"><a>Waist</a></button>
+                <button data-filter="ping" data-filter-tag="legs"><a>Legs</a></button>
+                <button data-filter="ping" data-filter-tag="feet"><a>Feet</a></button>
+                <button data-filter="ping" data-filter-tag="ring"><a>Ring</a></button>
+                <button data-filter="ping" data-filter-tag="trinket"><a>Trinket</a></button>
+                <button data-filter="ping" data-filter-tag="int-trin"><a>IntTrinket</a></button>
+                <button data-filter="ping" data-filter-tag="agi-trin"><a>AgiTrinket</a></button>
+                <button data-filter="ping" data-filter-tag="str-trin"><a>StrTrinket</a></button>
+                <button data-filter="ping" data-filter-tag="weapon"><a>Weapon</a></button>
+                <button data-filter="ping" data-filter-tag="dagger"><a>Dagger</a></button>
+                <button data-filter="ping" data-filter-tag="fist"><a>Fist Weapon</a></button>
+                <button data-filter="ping" data-filter-tag="oh-axe"><a>One-hand Axe</a></button>
+                <button data-filter="ping" data-filter-tag="oh-mace"><a>One-hand Mace</a></button>
+                <button data-filter="ping" data-filter-tag="oh-sword"><a>One-hand Sword</a></button>
+                <button data-filter="ping" data-filter-tag="warglavie"><a>Warglavie</a></button>
+                <button data-filter="ping" data-filter-tag="polearm"><a>Polearm</a></button>
+                <button data-filter="ping" data-filter-tag="staff"><a>Staff</a></button>
+                <button data-filter="ping" data-filter-tag="th-axe"><a>Two-hand Axe</a></button>
+                <button data-filter="ping" data-filter-tag="th-mace"><a>Two-hand Mace</a></button>
+                <button data-filter="ping" data-filter-tag="th-sword"><a>Two-hand Sword</a></button>
+                <button data-filter="ping" data-filter-tag="ranged"><a>Ranged</a></button>
+                <button data-filter="ping" data-filter-tag="bow"><a>Bow</a></button>
+                <button data-filter="ping" data-filter-tag="crossbow"><a>Crossbow</a></button>
+                <button data-filter="ping" data-filter-tag="gun"><a>Gun</a></button>
+                <button data-filter="ping" data-filter-tag="wand"><a>Wand</a></button>
+                <button data-filter="ping" data-filter-tag="offHand"><a>Off-hand</a></button>
+                <button data-filter="ping" data-filter-tag="shield"><a>Shield</a></button>
+
+
+              </div>
+            </div>
+            <div class="filters-items">
+              <div class="left-text">Dungeon:</div>
+              <div class="buttons">
+                <button class="atal-button" data-filter="ping" data-filter-tag="atalDazar"><a>Atal'dazar</a></button>
+                <button data-filter="ping" data-filter-tag="freehold"><a>Freehold</a></button>
+                <button data-filter="ping" data-filter-tag="kingsRest"><a>King's Rest</a></button>
+                <button data-filter="ping" data-filter-tag="shrineOfTheStorm"><a>Shrine of the Storm</a></button>
+                <button data-filter="ping" data-filter-tag="siegeOfBoralus"><a>Siege of Boralus</a></button>
+                <button data-filter="ping" data-filter-tag="templeOfSethraliss"><a>Temple of Sethraliss</a></button>
+                <button data-filter="ping" data-filter-tag="theMotherlode"><a>The MOTHERLODE!!</a></button>
+                <button data-filter="ping" data-filter-tag="theUnderrot"><a>The Underrot</a></button>
+                <button data-filter="ping" data-filter-tag="tolDagor"><a>Tol Dagor</a></button>
+                <button data-filter="ping" data-filter-tag="waycrestManor"><a>Waycrest Manor</a></button>
+              </div>
+            </div>
+            <div class="filters-items">
+              <div class="left-text">Filters:</div>
+              <div class="buttons ping">
+                <div data-tags="atalDazar"><button class="atalfilters-button dn"  ><a>Atal'dazar</a></button></div>
+              </div>
+            </div>
+            <button data-filter="ping" data-filter="ping" data-filter-tag="atalDazar" data-reset="true">Reset</button>
+
+          </div>
+
+          <div id="dungeons">
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Atal'dazar</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="atalDazar cloak haste mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158375/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar leather chest">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155860/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar cloth chest">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159233/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar plate feet crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155861/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar cloth feet crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158303/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar mail feet crit haste">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158308/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar ring haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159458/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar mail hands crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158317/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar plate hands haste mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159445/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar plate head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155866/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar cloth head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158315/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar mail head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159358/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar offHand crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158322/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar mail legs crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155868/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar leather legs crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155869/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar plate legs haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158313/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar dagger haste vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158323/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar oh-mace haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159632/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar fist haste mastery ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=160269/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar ranged wand crit haste ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158321/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar ranged bow crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158711/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar offhand shield haste mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158713/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar leather shoulder ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158304/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar agi-trin trinket ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158319/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar int-trin trinket ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158320/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar str-trin trinket ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158712/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar int-trin trinket ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159610/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar leather waist haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158306/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="loot-item-row" data-tags="atalDazar mail waist haste mastery ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158347/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar mail wrist crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158309/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar cloth wrist crit haste">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158348/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar plate wrist crit vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=160212/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="atalDazar leather wrist crit vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=160214/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Freehold</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="freehold ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">King's Rest</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="kingsRest">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Shrine of the Storm</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="shrineOfTheStorm ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Siege of Boralus</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="siegeOfBoralus ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Temple of Sethraliss</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="templeOfSethraliss">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">The MOTHERLODE!!</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="theMotherlode ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">The Underrot</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="theUnderrot ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Tol Dagor</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="tolDagor ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+            <div class="dungeon">
+              <div class="header">
+                <div class="dungeon-info">
+                  <div class="name">Waycrest Manor</div>
+                </div>
+              </div>
+
+              <div class="items ping">
+                <div class="loot-item-row" data-tags="waycrestManor ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row" data-tags="">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- dungeon -->
+
+
+
+          </div> <!-- dungeons -->
+        </div> <!-- lootwrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- wrapper -->
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
