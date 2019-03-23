@@ -10,8 +10,6 @@
 	  <meta http-equiv="Expires" content="0" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true, iconSize: true };</script>
     <script src="https://wow.zamimg.com/widgets/power.js"></script>
   </head>
@@ -27,85 +25,84 @@
             <div class="filters-items">
               <div class="left-text">Armor Class:</div>
               <div class="buttons">
-                <button data-filter="ping" data-filter-tag="cloth"><a>Cloth</a></button>
-                <button data-filter="ping" data-filter-tag="leather"><a>Leather</a></button>
-                <button data-filter="ping" data-filter-tag="mail"><a>Mail</a></button>
-                <button data-filter="ping" data-filter-tag="plate"><a>Plate</a></button>
+                <button class="filter" data-filter=".cloth"><a>Cloth</a></button>
+                <button class="filter" data-filter=".leather"><a>Leather</a></button>
+                <button class="filter" data-filter=".mail"><a>Mail</a></button>
+                <button class="filter" data-filter=".plate"><a>Plate</a></button>
               </div>
             </div>
             <div class="filters-items">
               <div class="left-text">Statistics:</div>
               <div class="buttons">
-                <button data-filter="ping" data-filter-tag="crit"><a>Critical Strike</a></button>
-                <button data-filter="ping" data-filter-tag="haste"><a>Haste</a></button>
-                <button data-filter="ping" data-filter-tag="mastery"><a>Mastery</a></button>
-                <button data-filter="ping" data-filter-tag="vers"><a>Versatility</a></button>
+                <button class="filter" data-filter=".crit"><a>Critical Strike</a></button>
+                <button class="filter" data-filter=".haste"><a>Haste</a></button>
+                <button class="filter" data-filter=".mastery"><a>Mastery</a></button>
+                <button class="filter" data-filter=".vers"><a>Versatility</a></button>
               </div>
             </div>
             <div class="filters-items">
               <div class="left-text">Armor Type:</div>
               <div class="buttons">
-                <button data-filter="ping" data-filter-tag="head"><a>Head</a></button>
-                <button data-filter="ping" data-filter-tag="shoulder"><a>Shoulder</a></button>
-                <button data-filter="ping" data-filter-tag="cloak"><a>Cloak</a></button>
-                <button data-filter="ping" data-filter-tag="chest"><a>Chest</a></button>
-                <button data-filter="ping" data-filter-tag="wrist"><a>Wrist</a></button>
-                <button data-filter="ping" data-filter-tag="hands"><a>Hands</a></button>
-                <button data-filter="ping" data-filter-tag="waist"><a>Waist</a></button>
-                <button data-filter="ping" data-filter-tag="legs"><a>Legs</a></button>
-                <button data-filter="ping" data-filter-tag="feet"><a>Feet</a></button>
-                <button data-filter="ping" data-filter-tag="ring"><a>Ring</a></button>
-                <button data-filter="ping" data-filter-tag="trinket"><a>Trinket</a></button>
-                <button data-filter="ping" data-filter-tag="int-trin"><a>IntTrinket</a></button>
-                <button data-filter="ping" data-filter-tag="agi-trin"><a>AgiTrinket</a></button>
-                <button data-filter="ping" data-filter-tag="str-trin"><a>StrTrinket</a></button>
-                <button data-filter="ping" data-filter-tag="weapon"><a>Weapon</a></button>
-                <button data-filter="ping" data-filter-tag="dagger"><a>Dagger</a></button>
-                <button data-filter="ping" data-filter-tag="fist"><a>Fist Weapon</a></button>
-                <button data-filter="ping" data-filter-tag="oh-axe"><a>One-hand Axe</a></button>
-                <button data-filter="ping" data-filter-tag="oh-mace"><a>One-hand Mace</a></button>
-                <button data-filter="ping" data-filter-tag="oh-sword"><a>One-hand Sword</a></button>
-                <button data-filter="ping" data-filter-tag="warglavie"><a>Warglavie</a></button>
-                <button data-filter="ping" data-filter-tag="polearm"><a>Polearm</a></button>
-                <button data-filter="ping" data-filter-tag="staff"><a>Staff</a></button>
-                <button data-filter="ping" data-filter-tag="th-axe"><a>Two-hand Axe</a></button>
-                <button data-filter="ping" data-filter-tag="th-mace"><a>Two-hand Mace</a></button>
-                <button data-filter="ping" data-filter-tag="th-sword"><a>Two-hand Sword</a></button>
-                <button data-filter="ping" data-filter-tag="ranged"><a>Ranged</a></button>
-                <button data-filter="ping" data-filter-tag="bow"><a>Bow</a></button>
-                <button data-filter="ping" data-filter-tag="crossbow"><a>Crossbow</a></button>
-                <button data-filter="ping" data-filter-tag="gun"><a>Gun</a></button>
-                <button data-filter="ping" data-filter-tag="wand"><a>Wand</a></button>
-                <button data-filter="ping" data-filter-tag="offHand"><a>Off-hand</a></button>
-                <button data-filter="ping" data-filter-tag="shield"><a>Shield</a></button>
+
+                <button class="filter" data-filter=".head"><a>Head</a></button>
+                <button class="filter" data-filter=".shoulder"><a>Shoulder</a></button>
+                <button class="filter" data-filter=".cloak"><a>Cloak</a></button>
+                <button class="filter" data-filter=".chest"><a>Chest</a></button>
+                <button class="filter" data-filter=".wrist"><a>Wrist</a></button>
+                <button class="filter" data-filter=".hands"><a>Hands</a></button>
+                <button class="filter" data-filter=".waist"><a>Waist</a></button>
+                <button class="filter" data-filter=".legs"><a>Legs</a></button>
+                <button class="filter" data-filter=".feet"><a>Feet</a></button>
+                <button class="filter" data-filter=".ring"><a>Ring</a></button>
+                <button class="filter" data-filter=".trinket"><a>All Trinkets</a></button>
+                <button class="filter" data-filter=".int-trin"><a>Int Trinket</a></button>
+                <button class="filter" data-filter=".agi-trin"><a>Agi Trinket</a></button>
+                <button class="filter" data-filter=".str-trin"><a>Str Trinket</a></button>
 
 
               </div>
             </div>
+            <div class="filters-items">
+              <div class="left-text">Weapon Type:</div>
+              <div class="buttons">
+                <button class="filter" data-filter=".weapon"><a>All Weapons</a></button>
+                <button class="filter" data-filter=".dagger"><a>Dagger</a></button>
+                <button class="filter" data-filter=".fist"><a>Fist Weapon</a></button>
+                <button class="filter" data-filter=".oh-axe"><a>One-hand Axe</a></button>
+                <button class="filter" data-filter=".oh-mace"><a>One-hand Mace</a></button>
+                <button class="filter" data-filter=".oh-sword"><a>One-hand Sword</a></button>
+                <button class="filter" data-filter=".warglavie"><a>Warglavie</a></button>
+                <button class="filter" data-filter=".polearm"><a>Polearm</a></button>
+                <button class="filter" data-filter=".staff"><a>Staff</a></button>
+                <button class="filter" data-filter=".th-axe"><a>Two-hand Axe</a></button>
+                <button class="filter" data-filter=".th-mace"><a>Two-hand Mace</a></button>
+                <button class="filter" data-filter=".th-sword"><a>Two-hand Sword</a></button>
+                <button class="filter" data-filter=".ranged"><a>All Ranged</a></button>
+                <button class="filter" data-filter=".bow"><a>Bow</a></button>
+                <button class="filter" data-filter=".crossbow"><a>Crossbow</a></button>
+                <button class="filter" data-filter=".gun"><a>Gun</a></button>
+                <button class="filter" data-filter=".wand"><a>Wand</a></button>
+                <button class="filter" data-filter=".offHand"><a>Off-hand</a></button>
+                <button class="filter" data-filter=".shield"><a>Shield</a></button>
+
+              </div>
+            </div>
+
             <div class="filters-items">
               <div class="left-text">Dungeon:</div>
               <div class="buttons">
-                <button class="atal-button" data-filter="ping" data-filter-tag="atalDazar"><a>Atal'dazar</a></button>
-                <button data-filter="ping" data-filter-tag="freehold"><a>Freehold</a></button>
-                <button data-filter="ping" data-filter-tag="kingsRest"><a>King's Rest</a></button>
-                <button data-filter="ping" data-filter-tag="shrineOfTheStorm"><a>Shrine of the Storm</a></button>
-                <button data-filter="ping" data-filter-tag="siegeOfBoralus"><a>Siege of Boralus</a></button>
-                <button data-filter="ping" data-filter-tag="templeOfSethraliss"><a>Temple of Sethraliss</a></button>
-                <button data-filter="ping" data-filter-tag="theMotherlode"><a>The MOTHERLODE!!</a></button>
-                <button data-filter="ping" data-filter-tag="theUnderrot"><a>The Underrot</a></button>
-                <button data-filter="ping" data-filter-tag="tolDagor"><a>Tol Dagor</a></button>
-                <button data-filter="ping" data-filter-tag="waycrestManor"><a>Waycrest Manor</a></button>
+                <button class="filter" data-filter=".atalDazar"><a>Atal'dazar</a></button>
+                <button class="filter" data-filter=".freehold"><a>Freehold</a></button>
+                <button class="filter" data-filter=".kingsRest"><a>King's Rest</a></button>
+                <button class="filter" data-filter=".shrineOfTheStorm"><a>Shrine of the Storm</a></button>
+                <button class="filter" data-filter=".siegeOfBoralus"><a>Siege of Boralus</a></button>
+                <button class="filter" data-filter=".templeOfSethraliss"><a>Temple of Sethraliss</a></button>
+                <button class="filter" data-filter=".theMotherlode"><a>The MOTHERLODE!!</a></button>
+                <button class="filter" data-filter=".theUnderrot"><a>The Underrot</a></button>
+                <button class="filter" data-filter=".tolDagor"><a>Tol Dagor</a></button>
+                <button class="filter" data-filter=".waycrestManor"><a>Waycrest Manor</a></button>
               </div>
             </div>
-            <div class="filters-items">
-              <div class="left-text">Filters:</div>
-              <div class="buttons ping">
-                <div data-tags="atalDazar"><button class="atalfilters-button dn"  ><a>Atal'dazar</a></button></div>
-              </div>
-            </div>
-            <button data-filter="ping" data-filter="ping" data-filter-tag="atalDazar" data-reset="true">Reset</button>
-
-          </div>
 
           <div id="dungeons">
 
@@ -117,57 +114,56 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="atalDazar cloak haste mastery">
+                <div class="loot-item-row mix atalDazar cloak haste mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158375/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar leather chest">
+                <div class="loot-item-row mix atalDazar leather chest">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=155860/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar cloth chest">
+                <div class="loot-item-row mix atalDazar cloth chest">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159233/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar plate feet crit mastery">
+                <div class="loot-item-row mix atalDazar plate feet crit mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=155861/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar cloth feet crit mastery">
+                <div class="loot-item-row mix atalDazar cloth feet crit mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158303/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar mail feet crit haste">
+                <div class="loot-item-row mix atalDazar mail feet crit haste">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158308/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar ring haste vers">
+                <div class="loot-item-row mix atalDazar ring haste vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159458/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar mail hands crit vers">
+                <div class="loot-item-row mix atalDazar mail hands crit vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158317/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -175,180 +171,175 @@
                   </div>
                 </div>
 
-                <div class="loot-item-row" data-tags="atalDazar plate hands haste mastery">
+                <div class="loot-item-row mix atalDazar plate hands haste mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159445/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar plate head">
+                <div class="loot-item-row mix atalDazar plate head">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=155866/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar cloth head">
+                <div class="loot-item-row mix atalDazar cloth head">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158315/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar mail head">
+                <div class="loot-item-row mix atalDazar mail head">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159358/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar offHand crit vers">
+                <div class="loot-item-row mix atalDazar weapon offHand crit vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158322/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar mail legs crit vers">
+                <div class="loot-item-row mix atalDazar mail legs crit vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=155868/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar leather legs crit mastery">
+                <div class="loot-item-row mix atalDazar leather legs crit mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=155869/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar plate legs haste vers">
+                <div class="loot-item-row mix atalDazar plate legs haste vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158313/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar dagger haste vers ">
+                <div class="loot-item-row mix atalDazar weapon dagger haste vers ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158323/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar oh-mace haste vers">
+                <div class="loot-item-row mix atalDazar weapon oh-mace haste vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159632/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar fist haste mastery ">
+                <div class="loot-item-row mix atalDazar weapon fist haste mastery ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=160269/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar ranged wand crit haste ">
+                <div class="loot-item-row mix atalDazar weapon ranged wand crit haste ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158321/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar ranged bow crit mastery">
+                <div class="loot-item-row mix atalDazar weapon ranged bow crit mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158711/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar offhand shield haste mastery">
+                <div class="loot-item-row mix atalDazar weapon offhand shield haste mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158713/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar leather shoulder ">
+                <div class="loot-item-row mix atalDazar leather shoulder ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158304/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar agi-trin trinket ">
+                <div class="loot-item-row mix atalDazar agi-trin trinket ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158319/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar int-trin trinket ">
+                <div class="loot-item-row mix atalDazar int-trin trinket ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158320/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar str-trin trinket ">
+                <div class="loot-item-row mix atalDazar str-trin trinket ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158712/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar int-trin trinket ">
+                <div class="loot-item-row mix atalDazar int-trin trinket ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=159610/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar leather waist haste vers">
+                <div class="loot-item-row mix atalDazar leather waist haste vers">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158306/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
-                <div class="loot-item-row" data-tags="atalDazar mail waist haste mastery ">
+                <div class="loot-item-row mix atalDazar mail waist haste mastery ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158347/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar mail wrist crit mastery">
+                <div class="loot-item-row mix atalDazar mail wrist crit mastery">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158309/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar cloth wrist crit haste">
+                <div class="loot-item-row mix atalDazar cloth wrist crit haste">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=158348/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar plate wrist crit vers ">
+                <div class="loot-item-row mix atalDazar plate wrist crit vers ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=160212/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="atalDazar leather wrist crit vers ">
+                <div class="loot-item-row mix atalDazar leather wrist crit vers ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=160214/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -367,35 +358,237 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="freehold ">
+                <div class="loot-item-row mix freehold cloak crit mastery ">
                   <div class="left-col">
                     <div class="item-info">
-                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                      <a href="https://www.wowhead.com/item=155884/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix freehold cloth chest">
                   <div class="left-col">
                     <div class="item-info">
-                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                      <a href="https://www.wowhead.com/item=158301/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix freehold leather feet crit mastery ">
                   <div class="left-col">
                     <div class="item-info">
-                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                      <a href="https://www.wowhead.com/item=155862/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix freehold cloth feet crit mastery ">
                   <div class="left-col">
                     <div class="item-info">
-                      <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                      <a href="https://www.wowhead.com/item=158351/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-
+                <div class="loot-item-row mix freehold mail feet crit mastery ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158356/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold ring crit haste">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158314/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold leather hands vers mastery ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155889/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate hands haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155890/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold cloth hands crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155891/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold mail hands haste vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155892/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155885/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold cloth head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155886/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold mail head">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155887/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold leather head ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155888/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold cloth legs crit mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158302/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate legs haste mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158361/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold leather legs haste mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159297/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold weapon dagger vers mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159132/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold weapon oh-mace crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159633/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold weapon oh-sword crit haste">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159635/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold weapon ranged gun crit vers">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159130/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold leather shoulder">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159299/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold mail shoulder ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159352/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate shoulder ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159407/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold agi-trin ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=155881/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold th-sword haste vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159634/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold cloth waist crit haste ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158346/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate waist haste vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158360/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold mail waist vers mastery ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159353/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold leather wrist haste vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158305/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold plate wrist crit vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=158311/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold cloth wrist vers mastery">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159227/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="loot-item-row mix freehold mail wrist haste vers ">
+                  <div class="left-col">
+                    <div class="item-info">
+                      <a href="https://www.wowhead.com/item=159356/" rel="" target="_blank" data-wh-icon-size="medium"></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div> <!-- dungeon -->
 
@@ -407,28 +600,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="kingsRest">
+                <div class="loot-item-row mix kingsRest">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -447,28 +640,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="shrineOfTheStorm ">
+                <div class="loot-item-row mix shrineOfTheStorm ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -487,28 +680,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="siegeOfBoralus ">
+                <div class="loot-item-row mix siegeOfBoralus ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -527,28 +720,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="templeOfSethraliss">
+                <div class="loot-item-row mix templeOfSethraliss">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -567,28 +760,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="theMotherlode ">
+                <div class="loot-item-row mix theMotherlode ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -607,28 +800,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="theUnderrot ">
+                <div class="loot-item-row mix theUnderrot ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -647,28 +840,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="tolDagor ">
+                <div class="loot-item-row mix tolDagor ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -687,28 +880,28 @@
               </div>
 
               <div class="items ping">
-                <div class="loot-item-row" data-tags="waycrestManor ">
+                <div class="loot-item-row mix waycrestManor ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
                     </div>
                   </div>
                 </div>
-                <div class="loot-item-row" data-tags="">
+                <div class="loot-item-row mix ">
                   <div class="left-col">
                     <div class="item-info">
                       <a href="https://www.wowhead.com/item=33225/" rel="" target="_blank" data-wh-icon-size="medium"></a>
@@ -737,8 +930,9 @@
 
 
     </div> <!-- wrapper -->
-
-    <script src="script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+      <script src="script.js"></script>
   </body>
 
 </html>
