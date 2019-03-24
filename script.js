@@ -1,6 +1,11 @@
 $(function() {
-
   $(".items").mixItUp({
+    "animation": {
+    "duration": 250,
+    "nudge": false,
+    "reverseOut": false,
+    "effects": "fade translateY(-100%)"
+    },
     load: {
       filter: ""
     },
