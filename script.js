@@ -32,8 +32,3 @@ $(function() {
   });
 });
 
-
-
-
-
-/* dziwnie to dziala to onmix + visiblity nie robi tego za dobrze meh przekmnic dalej */
